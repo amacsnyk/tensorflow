@@ -7,13 +7,16 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p . -t verbose",
-    "test": "ts-node src/run_tests.ts"
+    "test": "ts-node src/run_tests.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
     "@tensorflow/tfjs-core": "1.2.2",
-    "node-gles": "^0.0.13"
+    "node-gles": "^0.0.13",
+    "snyk": "^1.305.0"
   },
   "devDependencies": {
     "@types/jasmine": "~2.8.6",
@@ -24,5 +27,6 @@
     "ts-node": "^8.1.0",
     "tslint": "~5.9.1",
     "typescript": "^3.4.5"
-  }
+  },
+  "snyk": true
 }
