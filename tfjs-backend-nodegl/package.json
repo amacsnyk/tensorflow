@@ -14,7 +14,7 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@tensorflow/tfjs-core": "1.2.2",
+    "@tensorflow/tfjs-core": "1.6.1",
     "node-gles": "^0.0.13",
     "snyk": "^1.305.0"
   },
